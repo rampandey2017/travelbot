@@ -7,12 +7,45 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>select-interest</ion-title>
+    <ion-title>
+      <h2>What is your travel interest?</h2>
+      <p>Choose 3 or more to customize recommendation</p>
+    </ion-title>
+    <ion-buttons end>
+      <button (click)="searchToggle()" class="item-trns">
+        <ion-icon md="md-arrow-forward"></ion-icon>
+    </button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  <ion-grid no-padding>
+      <ion-row class="city-row">
+        <ion-col col-6 no-padding>
+          <button  (click)="click()" class="item-trns" no-padding>
+              <img src="assets/imgs/pune.jpg">
+              <!-- <ion-icon class="add-icon" md="md-add"></ion-icon> -->
+          </button>
+        </ion-col>
+        <ion-col col-6 no-padding>
+          <button  (click)="click()" class="item-trns" no-padding>
+              <img src="assets/imgs/mumbai.jpg">
+          </button>
+        </ion-col>
+        <ion-col col-6 no-padding>
+          <button  (click)="click()" class="item-trns" no-padding>
+              <img src="assets/imgs/pune.jpg">
+          </button>
+        </ion-col>
+        <ion-col col-6 no-padding>
+          <button  (click)="click()" class="item-trns" no-padding>
+              <img src="assets/imgs/mumbai.jpg">
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
 </ion-content>
