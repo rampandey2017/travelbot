@@ -15,6 +15,9 @@ page-select-interest {
     }
     .city-row {
         align-items: center;
+        ion-col {
+            padding-bottom: 2px !important;
+        }
         ion-col:nth-child(odd) {
             padding-right: 1px !important;
         }
@@ -29,5 +32,23 @@ page-select-interest {
     .add-icon {
         font-size: 20px;
     }
-    
+    button {
+        display: block;
+        position: relative;
+    }
+    .overlay-content {
+        z-index: 999;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        padding: 10px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .overlay-content p  {
+        font-weight: bold;
+
+    }
 }
